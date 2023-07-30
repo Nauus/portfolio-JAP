@@ -1,0 +1,279 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+h2 {
+	font-size: 2.7em;
+}
+h3 {
+	font-size: 2em;
+}
+p {
+	font-size: 1.25em;
+}
+ul {
+	list-style: none;
+}
+li {
+	font-size: 1.25em;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+header {
+	background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+	margin: 0;
+	padding: 25px 30px;
+	font-weight: bold;
+	color: blueviolet;
+	font-size: 1.6em;
+}
+
+header .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+header a {
+	padding: 5px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+header a:hover {
+	color: blueviolet;
+}
+
+#presentacion {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	color: white;
+	height: 900px;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("icon/fondo-programacion.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#presentacion h1 {
+	color: blueviolet;
+	font-family: "Eurostile Extended", sans-serif;
+	line-height: 1.5;
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+}
+#presentacion h2 {
+	color: blueviolet;
+	font-family: "europa", sans-serif;
+	line-height: 1.5;
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+}
+.circular--square {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	border-top: 1000px;
+}
+
+#portfolio .container {
+	display: flex;
+	justify-content: space-evenly;
+}
+#portfolio .texto {
+	width: 50%;
+	max-width: 500px;
+	text-align: initial;
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#portfolio h2 {
+	margin-top: 0px;
+}
+
+#portfolio .img-container {
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("icon/fotoperfil.PNG");
+	background-size: cover;
+	background-position: center center;
+	height: 600px;
+	width: 500px;
+}
+
+#experiencia {
+	background-color: rgb(30, 30, 30);
+	color: white;
+	text-align: center;
+}
+
+#experiencia .container {
+	padding: 150px 12px;
+}
+
+#experiencia h2 {
+	margin-top: 0;
+	font-size: 3.2em;
+}
+
+#experiencia p {
+	display: none;
+}
+
+#experiencia .carta {
+	background-position: center center;
+	background-size: cover;
+	padding: 50px;
+	margin: 20px;
+	border-radius: 15px;
+}
+
+.carta:first-child {
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("icon/html.png");
+}
+
+.carta:nth-child(2) {
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("icon/css.png");
+}
+
+.carta:last-child {
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("icon/js.png");
+}
+
+#caracteristicas .container {
+	text-align: center;
+	padding: 200px 12px;
+}
+
+#caracteristicas li {
+	margin: 15px 0px;
+	font-weight: bold;
+}
+
+#arregla-ya {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(30, 30, 30);
+	color: white;
+	height: 80vh;
+}
+
+#arregla-ya h2 {
+	font-size: 8vw;
+}
+
+#arregla-ya button {
+	font-size: 5vw;
+}
+
+footer p {
+	margin: 0;
+	padding: 12px;
+	color: rgb(100, 100, 100);
+}
+
+footer {
+	background-color: rgb(230, 230, 230);
+}
+
+footer .container {
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+@media (min-width: 720px) {
+	header {
+		position: fixed;
+		width: 100%;
+	}
+	header .container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header nav {
+		flex-direction: row;
+		padding-bottom: 0;
+		padding-right: 20px;
+	}
+
+	#presentacion h1 {
+		font-size: 5em;
+	}
+
+	#experiencia .programas {
+		display: flex;
+		justify-content: center;
+	}
+
+	#experiencia p {
+		display: block;
+		margin-bottom: 30px;
+	}
+	#experiencia h3 {
+		margin-top: 0px;
+	}
+	#experiencia.carta {
+		padding: 50px;
+	}
+
+	footer .container {
+		justify-content: flex-end;
+	}
+}
